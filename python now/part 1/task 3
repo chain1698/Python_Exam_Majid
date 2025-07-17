@@ -1,0 +1,18 @@
+def count_vowels(text):
+    vowels = 'aeiou'
+    text_lower = text.lower()
+    vowel_counts = {v: 0 for v in vowels}
+    total_count = 0
+
+    for char in text_lower:
+        if char in vowels:
+            vowel_counts[char] += 1
+            total_count += 1
+
+    print(f"Total number of vowels: {total_count}")
+    for v in vowels:
+        print(f"{v}: {vowel_counts[v]}")
+
+# Test with the given string
+input_text = "hi my name is majid and i like my coffee."
+count_vowels(input_text)
