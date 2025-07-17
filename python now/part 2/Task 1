@@ -5,11 +5,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# 1. Load dataset
+# 1. Load
 #    Make sure CHEMALI Majid.csv is in the same folder as this script
 df = pd.read_csv(r"C:\Users\Majid\Desktop\python now\part 2\CHEMALI Majid.csv")
 
-# 2. Exploratory Data Analysis (EDA)
+# 2. Exploratory Data Analysis
 print("=== First 5 rows ===")
 print(df.head(), "\n")
 
@@ -86,4 +86,4 @@ plt.tight_layout()
 plt.savefig("chart5_correlation_heatmap.png")
 plt.show()
 
-# End of script
+
